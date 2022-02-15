@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap'); /*400*/
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap'); /*700*/
+:root {
+  font-family: 'Big Shoulders Display', cursive;
+  font-family: 'Lexend Deca', sans-serif;
+  /* ## Colors */
+  /* ### Primary */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* ### Neutral */
+  --transparent-white_paragraphs: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray_background_headings_buttons: hsl(0, 0%, 95%);
+}
+
+/* START CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* END CSS RESET */
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  max-width: 360px;
+  margin: 5rem 1.5rem;
+}
+.container-item {
+  height: 450px;
+  width: auto;
+  position: relative;
+}
+.container-item * {
+  margin: 1rem 2rem;
+  padding: 0.5rem 1rem;
+}
+.icon {
+  margin-top: 2rem;
+}
+.title {
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--very-light-gray_background_headings_buttons);
+  text-transform: uppercase;
+  font-size: 40px;
+}
+.text {
+  color: var(--transparent-white_paragraphs);
+  /* font-size: 15px; */
+  line-height: 1.7;
+}
+.button {
+  margin-left: 3rem;
+}
+button {
+  display: inline-block;
+  position: absolute;
+  bottom: 1rem;
+  border: none;
+  border-radius: 30px;
+  width: 10rem;
+  height: 3rem;
+  padding: 1rem 2rem;
+  margin: 0;
+  text-decoration: none;
+  background: var(--very-light-gray_background_headings_buttons);
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 250ms ease-in-out, transform 150ms ease;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+button:hover,
+button:focus {
+  color: #fff;
+  outline: 2px solid white;
+}
+
+
+button:active {
+  transform: scale(0.99);
+}
+
+.sedan {
+  background-color: var(--bright-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.sedan-button {
+  color: var(--bright-orange);
+}
+.sedan-button:hover,
+.sedan-button:focus{
+  background: hsl(31, 77%, 52%);
+}
+.suv {
+  background-color: var(--dark-cyan);
+}
+.suv-button {
+  color: var(--dark-cyan);
+}
+.suv-button:hover,
+.suv-button:focus{
+  background: var(--dark-cyan);
+}
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.luxury-button {
+  color: var(--very-dark-cyan);
+}
+.luxury-button:hover,
+.luxury-button:focus{
+  background: var(--very-dark-cyan);
+}
+/* - Font size: 15px */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media(min-width:930px){
+  .container{
+    flex-direction: row;
+    max-width: 80%;
+  }
+  .sedan{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .container-item {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media(min-width:768px){
+  .container{
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .sedan{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+  .luxury{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+  }
+  .container-item {
+    height: 500px;
+    width: auto;
+  }
+}
+
+@media(min-width:1000px){
+  .container{
+    max-width: 85%;
+  }
+
+}
+
+@media(min-width:1200px){
+  .container{
+    max-width:75%;
+    /* margin: 5rem 1.5rem; */
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
