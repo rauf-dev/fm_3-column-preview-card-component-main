@@ -26,7 +26,6 @@ Users should be able to:
 
 ### Screenshot
 
-!
 | Mobile                                                                                | Desktop                                                                                 |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | <img src="./screenshot_mobile.png" width="100" height="" alt="Screenshot of solution"> | <img src="./screenshot_desktop.png" width="500" height="" alt="Screenshot of solution"> |
