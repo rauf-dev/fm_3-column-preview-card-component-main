@@ -29,7 +29,7 @@ Users should be able to:
 !
 | Mobile                                                                                | Desktop                                                                                 |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| <img src="./screenshot_mobile.png" width="80" height="" alt="Screenshot of solution"> | <img src="./screenshot_desktop.png" width="300" height="" alt="Screenshot of solution"> |
+| <img src="./screenshot_mobile.png" width="100" height="" alt="Screenshot of solution"> | <img src="./screenshot_desktop.png" width="500" height="" alt="Screenshot of solution"> |
 
 ### Links
 
